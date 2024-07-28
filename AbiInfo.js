@@ -12,7 +12,7 @@ const pairABI = [
 ];
 
 const routerABI = [
-  "function getAmountOut(address factory, uint amountIn, address[] memory path) internal view returns (uint[] memory amounts)",
+  "function getAmountsOut(uint amountIn, address[] memory path) public view returns (uint[] memory amounts)",
 ];
 
 module.exports = { erc20ABI, factoryABI, pairABI, routerABI };
